@@ -7,7 +7,40 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Hi there!</h1>
+        <div id="img"></div>
+    </header>
+    <main>
+        <div id="title">
+            <h2>Tâches du jour</h2>
+        </div>
+        <nav id="menu">
+            <p>Categorie</p>
+            <ul id="catContent" class="hidden">
+                <li><p href="#" id="catBtn">Toutes les taches</p></li>
+                <li><p href="#" class="catBtn">Maison</p></li>
+                <li><p href="#" class="catBtn" >Perso</p></li>
+            </ul>
+        </nav>
+        <div id="tasks" class="tasks">
+        </div>
+    </main>
+    <button id="addTask">+</button>
+    <div id="modal" class="hidden">
+        <div>
+            <h1>Nouvelle tache</h1>
+            <input type="text" id="tas">
+            <input type="text" id="category">
+
+            <div>
+                <button id="submit">Valider</button>
+                <button id="modalCancel">Annuler</button>
+            </div>
+        </div>
+    </div>
     
+    <script src="assets/js/Task.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
